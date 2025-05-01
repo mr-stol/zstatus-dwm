@@ -22,7 +22,7 @@ to remove battery status and use 24-hour time format)
 - Separators and begin/end text of bar may be changed by changing 3rd, 1st and 2nd args of
 stat_print after list of info will be displayed
 (for example, you can replace begin for status bar by "```  -Q) \   ```" by replacing stat_print call
-by ```stat_print $stat_bar_l [list [clock format [clock seconds] -format %I:%M%p] [stat_battery]]   -Q) \   ```
+by ```stat_print $stat_bar_l [list [clock format [clock seconds] -format %I:%M%p] [stat_battery]] "  -Q) \   "```
 to make girl in the status bar winking
 
 3. Adding custom scripts
