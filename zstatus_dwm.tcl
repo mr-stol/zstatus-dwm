@@ -33,7 +33,8 @@ proc stat_battery {} {
 }
 
 proc stat_autoupdate {} {
-	stat_print 32 [list [clock format [clock seconds] -format %I:%M%p] [stat_battery]]
+	global stat_bar_l
+	stat_print $stat_bar_l [list [clock format [clock seconds] -format %I:%M%p] [stat_battery]]
 	after [expr 60000 - [clock milliseconds]%60000] stat_autoupdate
 }
 
